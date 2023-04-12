@@ -1,2 +1,2 @@
 # gamut-mlp
-Repository for GamutMLP Paper
+Repository for the paper: GamutMLP - A Lightweight MLP for Color Loss Recovery
