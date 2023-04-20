@@ -11,7 +11,7 @@ from torch.utils.data import Dataset
 from tqdm import tqdm
 
 from src.gma_methods.base_gma_method import BaseGMAMethod
-from src.metrics import calc_deltaE, calc_mae, calc_psnr, calc_rmse
+from src.metrics import calc_psnr, calc_rmse
 from src.pipelines.base_pipeline import BasePipeline
 from src.utils import utils
 from src.utils.color import (
@@ -89,8 +89,7 @@ class GMAPipelineOptimTime(BasePipeline):
 
                 rmse = calc_rmse(prop_gma, ln_prop_img)
                 psnr = calc_psnr(prop_gma.astype(np.float32), ln_prop_img.astype(np.float32))
-                mae = calc_mae(prop_gma, ln_prop_img)
-                deltaE2000 = calc_deltaE(prop_gma, ln_prop_img, color_space="ProPhotoRGB")
+
                 rmse_oog = calc_rmse(prop_gma[bf_gma_mask], ln_prop_img[bf_gma_mask])
                 psnr_oog = calc_psnr(
                     prop_gma[bf_gma_mask].astype(np.float32),
@@ -101,8 +100,6 @@ class GMAPipelineOptimTime(BasePipeline):
                         image_filename=img_name,
                         rmse=rmse,
                         psnr=psnr,
-                        mae=mae,
-                        deltaE2000=deltaE2000,
                         rmse_oog=rmse_oog,
                         psnr_oog=psnr_oog,
                         training_time=training_time,

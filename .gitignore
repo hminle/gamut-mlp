@@ -1,5 +1,6 @@
 logs/*
 src/__pycache__
+output_csv/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

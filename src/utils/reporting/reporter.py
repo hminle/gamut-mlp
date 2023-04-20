@@ -16,8 +16,6 @@ class BaseReporter:
         image_filename: str,
         rmse: float,
         psnr: float,
-        mae: float,
-        deltaE2000: float,
         rmse_oog: float,
         psnr_oog: float,
         training_time: float = 0,

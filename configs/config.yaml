@@ -21,8 +21,7 @@ defaults:
 work_dir: ${hydra:runtime.cwd}
 
 # path to folder with data
-data_root: "/home/hminle/data/gma_dataset/dimensions_1920_1080"
-db_root: "/home/hminle/gitrepo/gma-mlp/db"
+data_root: "/home/hminle/data/gma_dataset/refined_dataset"
 
 # pretty print config at the start of the run using Rich library
 print_config: True
