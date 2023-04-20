@@ -1,0 +1,24 @@
+# @package _global_
+
+# run in experiment mode with:
+# `python run.py mode=exp name=experiment_name`
+
+experiment_mode: True
+
+# allows for custom naming of the experiment
+
+# hydra:
+#   # sets output paths for all file logs to `logs/experiment/name'
+#   run:
+#     dir: logs/experiments/${name}/${pipeline.pipeline_name}/${method.method_name}/${now:%Y-%m-%d_%H-%M-%S}
+#   sweep:
+#     dir: logs/experiments/${name}/multirun_${now:%Y-%m-%d_%H-%M-%S}
+#     subdir: ${hydra.job.num}_${pipeline.pipeline_name}_${method.method_name}
+
+hydra:
+  # sets output paths for all file logs to `logs/experiment/name'
+  run:
+    dir: logs/experiments/${name}/runs/${method.method_name}/${now:%Y-%m-%d}__${now:%H-%M-%S}
+  sweep:
+    dir: logs/experiments/${name}/multiruns/${now:%Y-%m-%d}__${now:%H-%M-%S}
+    subdir: ${hydra.job.num}_${method.method_name}

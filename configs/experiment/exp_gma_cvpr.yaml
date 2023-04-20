@@ -1,0 +1,12 @@
+# @package _global_
+
+# run in experiment mode with:
+# `python run.py mode=exp name=experiment_name`
+
+defaults:
+  - override /dataset: prophoto_full_16b
+  - override /method: ???
+  - override /pipeline: gma_pipeline_optim_time
+
+name: "cvpr_full_16b"
+data_root: "/home/hminle/data/gma_dataset/refined_dataset"

@@ -1,0 +1,6 @@
+_target_: src.utils.reporting.csv_reporter.CSVReporter
+
+output_dir: ${db_root}
+research_name: ${name}
+dataset_name: ${dataset.dataset_name}
+postfix: ""

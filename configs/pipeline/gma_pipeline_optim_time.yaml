@@ -1,0 +1,5 @@
+_target_: src.pipelines.gma_pipeline_optim_time.GMAPipelineOptimTime
+
+pipeline_name: "gma_pipeline"
+start_idx: 0
+stop_idx: -1

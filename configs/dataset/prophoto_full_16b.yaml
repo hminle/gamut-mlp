@@ -1,0 +1,5 @@
+_target_: src.datasets.img_dataset.CV2ImgDataset
+
+data_root: ${data_root} # data_root is specified in config.yaml
+dataset_name: prophoto_full_16b
+img_extension: "png"

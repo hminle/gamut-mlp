@@ -1,0 +1,3 @@
+_target_: src.gma_methods.gma_method_clip.GMAMethodClip
+
+method_name: "clip"
