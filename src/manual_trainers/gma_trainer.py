@@ -36,4 +36,3 @@ def tinycudnn_training_loop(
     torch.cuda.synchronize()
     if checkpoint_path:
         torch.save(model.state_dict(), checkpoint_path)
-

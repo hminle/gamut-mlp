@@ -6,6 +6,7 @@ from omegaconf import DictConfig, OmegaConf
 
 from src.pipelines.base_pipeline import BasePipeline
 
+
 class ExperimentManager:
     def __init__(self, config: DictConfig):
         self.config = config

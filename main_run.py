@@ -5,6 +5,7 @@ from omegaconf import DictConfig, OmegaConf
 
 from src.experiment_manager import ExperimentManager
 
+
 @hydra.main(config_path="configs/", config_name="config.yaml")
 def main(config: DictConfig):
 
@@ -15,6 +16,7 @@ def main(config: DictConfig):
     experiment_manager.init_experiment()
     experiment_manager.start_experiment()
     experiment_manager.finish_experiment()
+
 
 if __name__ == "__main__":
     main()

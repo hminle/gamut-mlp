@@ -8,7 +8,7 @@ defaults:
   - pipeline: gma_pipeline_optim_time
   - reporter: csv_reporter
   - mode: exp
-  - experiment: exp_gma_FULL_16b
+  - experiment: exp_gma_cvpr
 
   # enable color logging
   - override hydra/hydra_logging: colorlog
