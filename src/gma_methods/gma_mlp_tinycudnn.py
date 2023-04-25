@@ -3,11 +3,9 @@ import time
 from typing import List
 
 import numpy as np
-import pytorch_lightning as pl
 import tinycudann as tcnn
 import torch
 from hydra.utils import instantiate
-from pytorch_lightning.callbacks.early_stopping import EarlyStopping
 from torch import nn
 from torch.nn import functional as F
 from torch.utils.data import DataLoader, TensorDataset, random_split
@@ -26,7 +24,7 @@ from src.utils.color import (
     to_uint8,
 )
 from src.utils.image_func import get_wh_mgrid
-from src.utils.input_tensor_tinycudnn import InputTensor
+from src.utils.input_tensor import InputTensor
 from src.utils.mask import compute_masks
 
 torch.manual_seed(202207)
