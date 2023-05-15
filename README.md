@@ -7,7 +7,7 @@
 <sup>2</sup>Adobe Research
 
 
-**This software is provided for research purposes only and CAN NOT be used for commercial purposes.**
+**This software is provided for research purposes only and CANNOT be used for commercial purposes.**
 
 ## Project Website: https://gamut-mlp.github.io/
 
@@ -29,7 +29,7 @@ Please cite us if you use this code or our dataset:
 - Train dataset: [Download 2000 512x512 16-bit ProPhoto images](https://ln5.sync.com/dl/b9fae1a30/cnfhh9a7-2r87gipm-c6b5u92t-47u8cjy7)
 
 ## Code:
-Our source code if for PyTorch platforms. *There is no guarantee that the trained models produce EXACTLY the same results, but it should be equivalent.*
+Our source code is for PyTorch platforms. *There is no guarantee that the trained models produce EXACTLY the same results, but it should be equivalent.*
 
 ### Setup environment:
 - We provide `environment.yml` for conda, which can be installed with: `conda env create -f environment.yml`
