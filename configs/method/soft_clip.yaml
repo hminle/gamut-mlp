@@ -1,0 +1,3 @@
+_target_: src.gma_methods.gma_method_soft_clip.GMAMethodSoftClip
+
+method_name: "soft_clip"

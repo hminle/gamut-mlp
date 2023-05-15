@@ -1,0 +1,20 @@
+_target_: src.gma_methods.gma_mlp_tinycudnn.GMAMLPTinyCudnn
+
+sample: 50
+og_sample: 5
+gpus: 2
+n_frequencies: 12
+n_neurons: 32
+n_hidden_layers: 2
+activation: "ReLU"
+output_activation: "None"
+lr: 0.005
+loss_func: "mse_loss"
+checkpoint_path: "."
+is_trained: False
+retrain: False
+expand_og_only: False
+need_encoding: True
+pretrained_model: "/home/hminle/gitrepo/gma-mlp/pretrained_models/"
+n_steps: 10000
+method_name: mlp_tiny
