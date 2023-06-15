@@ -53,5 +53,21 @@ method.sample=50 \
 method.og_sample=5 \
 method.gpus=3
 ```
+
+- Run the meta-init fast MLP:
+```bash
+python main_run.py experiment=exp_gma_cvpr \
+method=mlp_tiny_cudnn \
+method.n_neurons=32 \
+method.is_trained=True \
+method.retrain=True \
+method.method_name=meta_tiny32 \
+method.pretrained_model=<replace with project's absolute path here>/pretrained_models/meta_tinycudnn32_metaep3_innersteps10k.pt \
+method.n_steps=1200 \
+method.sample=50 \
+method.og_sample=5 \
+method.gpus=0
+```
+
 - Note: see `configs` for more settings
 - Checkout our running scripts for more examples of other baseline methods: `scripts/cvpr_2023.sh`
