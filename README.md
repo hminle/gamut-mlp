@@ -16,11 +16,13 @@
 Please cite us if you use this code or our dataset:
 
 ```
-@inproceedings{hoangle2023GamutMLP,
+@InProceedings{Le_2023_CVPR,
     author    = {Le, Hoang M. and Price, Brian and Cohen, Scott and Brown, Michael S.},
     title     = {GamutMLP: A Lightweight MLP for Color Loss Recovery},
-    booktitle = {CVPR},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
     year      = {2023},
+    pages     = {18268-18277}
 }
 ```
 
