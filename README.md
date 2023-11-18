@@ -54,6 +54,13 @@ method.og_sample=5 \
 method.gpus=3
 ```
 
+- Train the meta-init MLP:
+```bash
+python main_run.py experiment=exp_gma_train_meta \
+pipeline.meta_inner_steps=10000 \
+pipeline.meta_epoch=3
+```
+
 - Run the meta-init fast MLP:
 ```bash
 python main_run.py experiment=exp_gma_cvpr \
@@ -68,6 +75,7 @@ method.sample=50 \
 method.og_sample=5 \
 method.gpus=0
 ```
+
 
 - Note: see `configs` for more settings
 - Checkout our running scripts for more examples of other baseline methods: `scripts/cvpr_2023.sh`

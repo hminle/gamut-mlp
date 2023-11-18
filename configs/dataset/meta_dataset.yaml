@@ -1,0 +1,4 @@
+_target_: src.datasets.meta_dataset.GMATinyCudnnMetaDataset
+
+data_root: ${data_root} # data_root is specified in config.yaml
+dataset_name: train_prop_512_16b

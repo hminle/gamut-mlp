@@ -1,0 +1,11 @@
+# @package _global_
+
+# run in experiment mode with:
+# `python run.py mode=exp name=experiment_name`
+
+defaults:
+  - override /dataset: meta_dataset
+  - override /pipeline: gma_train_meta_pipeline
+
+name: "train_meta_prop_512_16b"
+data_root: "/home/hminle/data/gma_dataset/refined_dataset"

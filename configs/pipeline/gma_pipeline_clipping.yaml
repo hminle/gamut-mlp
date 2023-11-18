@@ -1,0 +1,6 @@
+_target_: src.pipelines.gma_pipeline_clipping.GMAPipelineClipping
+
+pipeline_name: "gma_pipeline"
+start_idx: 0
+stop_idx: -1
+outpath: /home/hminle/gitrepo/gamut-mlp/srgb_full_clip
